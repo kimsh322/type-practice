@@ -27,7 +27,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
+
 #input-box {
   width: 90%;
   height: 10%;
