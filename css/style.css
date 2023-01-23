@@ -30,7 +30,7 @@ body {
   position: relative;
 }
 
-#input-box {
+#input-box-container {
   width: 90%;
   height: 10%;
   display: flex;
