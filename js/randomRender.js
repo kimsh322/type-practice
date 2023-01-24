@@ -1,8 +1,7 @@
-const mainContainer = document.querySelector("#main-container");
-const mainContainerRect = mainContainer.getBoundingClientRect();
-
 // 화면의 랜덤한 위치에 문자열 넣는 함수
 function randomRender(str) {
+  const mainContainer = document.querySelector("#main-container");
+  const mainContainerRect = mainContainer.getBoundingClientRect();
   const newDiv = document.createElement("div");
   const strLeng = 80; // 문자열 길이
   const strHeight = 20; // 문자열 높이
@@ -22,7 +21,6 @@ function randomRender(str) {
   newDiv.style.top = `${y}px`;
   newDiv.style.width = `${strLeng}px`;
   newDiv.style.height = `${strHeight}px`;
-  newDiv.style.backgroundColor = "gray";
   newDiv.textContent = str;
   // 문자열 표시
   return mainContainer.appendChild(newDiv);

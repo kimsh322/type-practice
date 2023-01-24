@@ -16,13 +16,13 @@ const strArr = [
   "무화과",
   "마카다미아",
 ];
-const renderingStr = [];
+
 // 배열의 랜덤 요소를 인자로 전달하여 randomRender함수 실행
 let randomStrRender = (arr) => {
-  const idx = parseInt(Math.random() * arr.length);
+  const idx = Math.round(Math.random() * arr.length);
   return randomRender(arr[idx]);
 };
-const intervalRender = setInterval(randomStrRender, 3000, strArr);
+const intervalRender = setInterval(randomStrRender, 2000, strArr);
 
 // 인터발 중지
 const stopInterval = document.querySelector("#stop");

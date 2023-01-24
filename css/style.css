@@ -41,4 +41,5 @@ body {
 .random-str {
   padding: 0 4px;
   text-align: center;
+  background-color: transparent;
 }
