@@ -5,7 +5,6 @@ function removeStr(str) {
   let idx = null;
   // 지금 화면에 존재하는 단어를 배열로 받음
   const leavingStr = Array.from(document.querySelectorAll(".random-str")); //querySelectorAll은 유사배열이라서 배열로 바꿔준다.
-  console.log(leavingStr);
   // 배열을 돌면서 같은 글자가 있는지 확인
   for (let el of leavingStr) {
     if (el.textContent === str) {
@@ -25,6 +24,7 @@ inputBox.onkeydown = (e) => {
   if (e.keyCode === 13) {
     // 엔터키 코드가 13이다.
     removeStr(inputBox.value);
+    // input 박스 초기화
     inputBox.value = "";
   }
 };
