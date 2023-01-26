@@ -3,6 +3,7 @@
 // 인자로 받은 글자가 화면에 있으면 글자를 지우는 함수
 function removeStr(str) {
   let idx = null;
+  const scoreBox = document.querySelector("#score-box");
   // 지금 화면에 존재하는 단어를 배열로 받음
   const leavingStr = Array.from(document.querySelectorAll(".random-str")); //querySelectorAll은 유사배열이라서 배열로 바꿔준다.
   // 배열을 돌면서 같은 글자가 있는지 확인
@@ -15,6 +16,8 @@ function removeStr(str) {
   if (idx !== null) {
     // idx에 값이 있으면 지워준다.
     leavingStr[idx].remove();
+    score++;
+    scoreBox.textContent = score;
   }
 }
 

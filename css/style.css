@@ -34,7 +34,7 @@ body {
   width: 90%;
   height: 10%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -42,4 +42,8 @@ body {
   padding: 0 4px;
   text-align: center;
   background-color: transparent;
+}
+#input-box {
+  width: 150px;
+  height: 30px;
 }

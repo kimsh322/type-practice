@@ -5543,3 +5543,5 @@ const strArr = [
   "힘없이",
   "힘차다",
 ];
+
+let score = 0;
