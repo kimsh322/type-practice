@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/* 헤더 */
 #header {
   width: 90%;
   height: 5%;
@@ -20,6 +20,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* 메인화면 */
 #main-container {
   width: 90%;
   height: 85%;
@@ -30,6 +32,14 @@ body {
   position: relative;
 }
 
+/* 랜덤생성단어박스 */
+.random-str {
+  padding: 0 4px;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* 밑 라인 */
 #input-box-container {
   width: 90%;
   height: 10%;
@@ -38,12 +48,36 @@ body {
   align-items: center;
 }
 
-.random-str {
-  padding: 0 4px;
-  text-align: center;
-  background-color: transparent;
-}
 #input-box {
   width: 150px;
   height: 30px;
+}
+
+/* 규칙 박스와 규칙 */
+#rule {
+  border: 2px solid black;
+  padding: 1px 2px;
+  cursor: pointer;
+}
+#rule:hover {
+  background-color: gray;
+}
+#rule:hover ~ #rule-descriptor-container {
+  display: block;
+}
+#rule-descriptor-container {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 0px;
+  background-color: beige;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: none;
+}
+.rule-descriptor {
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
 }

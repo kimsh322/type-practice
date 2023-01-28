@@ -10,13 +10,31 @@
   </head>
   <body>
     <div id="header">여기는 헤더</div>
-    <div id="main-container">단어 나오는 화면</div>
+    <div id="main-container"></div>
     <div id="input-box-container">
       <div>
         <span>score :</span>
         <span id="score-box">0</span>
       </div>
       <input type="text" id="input-box" />
+      <div id="rule">규칙 보기</div>
+      <div id="rule-descriptor-container">
+        <h2>게임 규칙</h2>
+        <p class="rule-descriptor">
+          1. 시작 버튼을 누르면 일정 시간마다 화면에 무작위 단어가 생성됩니다.
+        </p>
+        <p class="rule-descriptor">
+          2. 입력창에 단어를 작성하고 엔터키를 누르면 단어가 없어지고 점수가
+          올라갑니다.
+        </p>
+        <p class="rule-descriptor">
+          3. 화면에 단어가 10개가 넘어가면 Game Over 입니다.
+        </p>
+        <p class="rule-descriptor">
+          4. 단어 생성은 시간이 지날수록 빨라지고 , 시간이 지나면 각 단어의
+          점수가 올라갑니다.
+        </p>
+      </div>
       <button id="start-button">시 작</button>
     </div>
     <button id="stop">중 지</button>

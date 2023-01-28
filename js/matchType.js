@@ -5,18 +5,19 @@ function removeStr(str) {
   let idx = null;
   const scoreBox = document.querySelector("#score-box");
   // 지금 화면에 존재하는 단어를 배열로 받음
-  const leavingStr = Array.from(document.querySelectorAll(".random-str")); //querySelectorAll은 유사배열이라서 배열로 바꿔준다.
+  const existingStr = Array.from(document.querySelectorAll(".random-str")); //querySelectorAll은 유사배열이라서 배열로 바꿔준다.
   // 배열을 돌면서 같은 글자가 있는지 확인
-  for (let el of leavingStr) {
+  for (let el of existingStr) {
     if (el.textContent === str) {
-      idx = leavingStr.indexOf(el); //글자가 있는 index값을 넣어준다.
+      idx = existingStr.indexOf(el); //글자가 있는 index값을 넣어준다.
       break;
     }
   }
   if (idx !== null) {
     // idx에 값이 있으면 지워준다.
-    leavingStr[idx].remove();
-    score++;
+    existingStr[idx].remove();
+    // 단어 하나당 100점
+    score += 100;
     scoreBox.textContent = score;
   }
 }
