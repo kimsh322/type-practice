@@ -11,21 +11,54 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #f1dbbf;
 }
 /* 헤더 */
 #header {
   width: 90%;
-  height: 5%;
+  height: 8%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px 0px;
+  position: relative;
+  background-color: #b9f3fc;
+}
+#score-box {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  width: 120px;
+  height: 40px;
+  padding-left: 5px;
+  position: absolute;
+  left: 0px;
+  background-color: #fedeff;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+#score-box > span {
+  margin: 2px;
+}
+#header-text {
+  font-size: 25px;
+}
+#button-box {
+  position: absolute;
+  right: 0px;
+}
+#start-button,
+#stop-button {
+  width: 80px;
+  height: 40px;
+  font-size: 20px;
 }
 
 /* 메인화면 */
 #main-container {
   width: 90%;
-  height: 85%;
-  background-color: skyblue;
+  height: 82%;
+  background-color: #aee2ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,18 +79,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #93c6e7;
 }
-
 #input-box {
   width: 150px;
   height: 30px;
 }
 
 /* 규칙 박스와 규칙 */
+.empty {
+  flex-basis: 80px;
+}
 #rule {
   border: 2px solid black;
   padding: 1px 2px;
   cursor: pointer;
+  flex-basis: 80px;
+  background-color: #698269;
+  color: white;
 }
 #rule:hover {
   background-color: gray;
