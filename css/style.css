@@ -52,6 +52,16 @@ body {
   width: 80px;
   height: 40px;
   font-size: 20px;
+  background-color: #fedeff;
+  border: 5px outset #808080;
+}
+#start-button:hover,
+#stop-button:hover {
+  background-color: #8d1d91;
+}
+#start-button:active,
+#stop-button:active {
+  border: 5px inset #808080;
 }
 
 /* 메인화면 */
@@ -72,7 +82,7 @@ body {
   background-color: transparent;
 }
 
-/* 밑 라인 */
+/* 하단부 */
 #input-box-container {
   width: 90%;
   height: 10%;
@@ -82,26 +92,47 @@ body {
   background: #93c6e7;
 }
 #input-box {
-  width: 150px;
-  height: 30px;
+  width: 180px;
+  height: 40px;
+  padding: 0 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 20px;
 }
 
 /* 규칙 박스와 규칙 */
-.empty {
-  flex-basis: 80px;
-}
-#rule {
+
+#rule,
+#ranking {
   border: 2px solid black;
   padding: 1px 2px;
   cursor: pointer;
   flex-basis: 80px;
   background-color: #698269;
   color: white;
+  text-align: center;
 }
+#ranking-container {
+  width: 20%;
+  height: 50%;
+  position: absolute;
+  background-color: beige;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: none;
+  text-align: center;
+  /* position absolute일 때 가운데 정렬 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #rule:hover {
   background-color: gray;
 }
-#rule:hover ~ #rule-descriptor-container {
+#rule:hover ~ #rule-descriptor-container,
+#ranking:hover ~ #ranking-container {
   display: block;
 }
 #rule-descriptor-container {

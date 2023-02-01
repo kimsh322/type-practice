@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/data.js"></script>
   </head>
   <body>
     <div id="header">
@@ -22,7 +21,10 @@
     </div>
     <div id="main-container"></div>
     <div id="input-box-container">
-      <div class="empty"></div>
+      <div id="ranking">랭킹 보기</div>
+      <div id="ranking-container">
+        <h2>랭 킹</h2>
+      </div>
       <input type="text" id="input-box" />
       <div id="rule">규칙 보기</div>
       <div id="rule-descriptor-container">
@@ -43,8 +45,9 @@
         </p>
       </div>
     </div>
-    <script src="./js/randomRender.js"></script>
-    <script src="./js/interval.js"></script>
-    <script src="./js/matchType.js"></script>
+    <script src="./js/data.js"></script>
+    <script defer src="./js/randomRender.js"></script>
+    <script defer src="./js/interval.js"></script>
+    <script defer src="./js/matchType.js"></script>
   </body>
 </html>

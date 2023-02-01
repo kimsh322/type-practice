@@ -1,6 +1,9 @@
 // 화면에 있는 글자를 입력하면 없어지는 기능 구현
-// 점수
+
+// 총점수, 단어 한글자당 점수
 let score = 0;
+let oneLetterScore = 10;
+
 // 인자로 받은 글자가 화면에 있으면 글자를 지우는 함수
 function removeStr(str) {
   let idx = null;
@@ -17,8 +20,8 @@ function removeStr(str) {
   if (idx !== null) {
     // idx에 값이 있으면 지워준다.
     existingStr[idx].remove();
-    // 단어 하나당 100점
-    score += 100;
+    // 단어 하나당 길이비례점수
+    score += str.length * oneLetterScore;
     scoreBox.textContent = score;
   }
 }
