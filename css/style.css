@@ -47,7 +47,7 @@ body {
   position: absolute;
   right: 0px;
 }
-#start-button,
+
 #stop-button {
   width: 80px;
   height: 40px;
@@ -55,11 +55,11 @@ body {
   background-color: #fedeff;
   border: 5px outset #808080;
 }
-#start-button:hover,
+
 #stop-button:hover {
   background-color: #8d1d91;
 }
-#start-button:active,
+
 #stop-button:active {
   border: 5px inset #808080;
 }
@@ -100,7 +100,16 @@ body {
   font-size: 20px;
 }
 
-/* 규칙 박스와 규칙 */
+#start-button {
+  width: 180px;
+  height: 50px;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* 랭킹과 규칙 */
 
 #rule,
 #ranking {
@@ -139,15 +148,31 @@ body {
   width: 50%;
   height: 50%;
   position: absolute;
-  bottom: 0px;
   background-color: beige;
   border: 2px solid black;
   border-radius: 5px;
   padding: 5px 10px;
   display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .rule-descriptor {
   font-size: 20px;
   margin: 5px;
   padding: 5px;
+}
+
+/* 카운터 스타일 */
+.start-counter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 50px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

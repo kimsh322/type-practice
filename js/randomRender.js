@@ -25,3 +25,9 @@ function randomRender(str) {
   // 문자열 표시
   return mainContainer.appendChild(newDiv);
 }
+
+// 배열의 랜덤 요소를 인자로 전달하여 randomRender함수 실행하는 함수
+let randomStrRender = (arr) => {
+  const idx = Math.round(Math.random() * arr.length);
+  return randomRender(arr[idx]);
+};
