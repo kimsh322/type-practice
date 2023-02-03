@@ -1,0 +1,50 @@
+/* 헤더 */
+#header {
+  width: 90%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+  position: relative;
+  background-color: #b9f3fc;
+}
+#score-box {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  width: 120px;
+  height: 40px;
+  padding-left: 5px;
+  position: absolute;
+  left: 0px;
+  background-color: #fedeff;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+#score-box > span {
+  margin: 2px;
+}
+#header-text {
+  font-size: 25px;
+}
+#button-box {
+  position: absolute;
+  right: 0px;
+}
+
+#stop-button {
+  width: 80px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #fedeff;
+  border: 5px outset #808080;
+}
+
+#stop-button:hover {
+  background-color: #8d1d91;
+}
+
+#stop-button:active {
+  border: 5px inset #808080;
+}

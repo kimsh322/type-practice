@@ -1,0 +1,31 @@
+/* 메인화면 */
+#main-container {
+  width: 90%;
+  height: 82%;
+  background-color: #aee2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* 랜덤생성단어박스 */
+.random-str {
+  padding: 0 4px;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* 시작 카운터 스타일 */
+.start-counter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 50px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
