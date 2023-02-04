@@ -11,6 +11,7 @@
 
 /* 랜덤생성단어박스 */
 .random-str {
+  position: absolute;
   padding: 0 4px;
   text-align: center;
   background-color: transparent;

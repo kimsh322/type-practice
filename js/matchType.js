@@ -24,6 +24,11 @@ function removeStr(str) {
     score += str.length * oneLetterScore;
     scoreBox.textContent = score;
   }
+  // 단어 카운터 구현
+  const verbNum = document.querySelector("#verb-num");
+  verbNum.textContent = existingStr.length;
+  if (existingStr.length > 11) verbNum.classList.add("red");
+  else verbNum.classList.remove("red");
 }
 
 // input에 문자열을 입력하고 엔터를 누르면 이벤트 발생

@@ -16,7 +16,6 @@ function randomRender(str) {
   );
   // 문자열 속성 정의
   newDiv.classList.add("random-str");
-  newDiv.style.position = "absolute";
   newDiv.style.left = `${x}px`;
   newDiv.style.top = `${y}px`;
   newDiv.style.width = `${strLeng}px`;
@@ -29,5 +28,12 @@ function randomRender(str) {
 // 배열의 랜덤 요소를 인자로 전달하여 randomRender함수 실행하는 함수
 let randomStrRender = (arr) => {
   const idx = Math.round(Math.random() * arr.length);
-  return randomRender(arr[idx]);
+  randomRender(arr[idx]);
+
+  // 단어 카운터 구현
+  const verbNum = document.querySelector("#verb-num");
+  const existingStr = document.querySelectorAll(".random-str");
+  verbNum.textContent = existingStr.length;
+  if (existingStr.length > 11) verbNum.classList.add("red");
+  else verbNum.classList.remove("red");
 };
