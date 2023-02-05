@@ -32,8 +32,17 @@ let randomStrRender = (arr) => {
 
   // 단어 카운터 구현
   const verbNum = document.querySelector("#verb-num");
-  const existingStr = document.querySelectorAll(".random-str");
+  const existingStr = Array.from(document.querySelectorAll(".random-str"));
   verbNum.textContent = existingStr.length;
   if (existingStr.length > 11) verbNum.classList.add("red");
   else verbNum.classList.remove("red");
+
+  // 단어 카운터 15이상이면 Game over
+  if (existingStr.length >= 15) {
+    clearInterval(intervalRender); // interval 중지
+    for (let el of existingStr) {
+      el.remove(); // 화면에 단어 모두 제거
+    }
+    startCounter("Game Over");
+  }
 };
