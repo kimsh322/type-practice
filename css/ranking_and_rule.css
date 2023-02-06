@@ -5,12 +5,14 @@
   border: 2px solid black;
   padding: 1px 2px;
   cursor: pointer;
-  flex-basis: 80px;
+  flex-basis: 100px;
   background-color: #698269;
   color: white;
   text-align: center;
+  font-size: 1.5rem;
 }
 #ranking-container {
+  font-size: 2rem;
   width: 20%;
   height: 50%;
   position: absolute;
@@ -34,6 +36,7 @@
   display: block;
 }
 #rule-descriptor-container {
+  font-size: 2rem;
   display: none;
   width: 50%;
   height: 50%;
@@ -46,8 +49,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+h2 {
+  text-align: center;
+}
 .rule-descriptor {
-  font-size: 20px;
+  font-size: 1.5rem;
   margin: 5px;
   padding: 5px;
 }

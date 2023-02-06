@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "KOTRAHOPE";
 }
 html,
 body {
@@ -12,4 +13,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f1dbbf;
+}
+@font-face {
+  font-family: "KOTRAHOPE";
+  src: url("../KOTRA_HOPE.otf");
 }

@@ -34,15 +34,15 @@ let randomStrRender = (arr) => {
   const verbNum = document.querySelector("#verb-num");
   const existingStr = Array.from(document.querySelectorAll(".random-str"));
   verbNum.textContent = existingStr.length;
-  if (existingStr.length > 11) verbNum.classList.add("red");
+  if (existingStr.length > 7) verbNum.classList.add("red");
   else verbNum.classList.remove("red");
 
-  // 단어 카운터 15이상이면 Game over
-  if (existingStr.length >= 15) {
+  // 단어 카운터 10이상이면 Game over
+  if (existingStr.length >= 10) {
     clearInterval(intervalRender); // interval 중지
     for (let el of existingStr) {
       el.remove(); // 화면에 단어 모두 제거
     }
-    startCounter("Game Over");
+    setCounter("Game Over");
   }
 };
