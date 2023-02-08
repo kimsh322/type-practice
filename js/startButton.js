@@ -36,7 +36,7 @@ startButton.onclick = () => {
 };
 
 // 인터발 중지
-const stopInterval = document.querySelector("#stop-button");
-stopInterval.onclick = () => {
-  clearInterval(intervalRender);
-};
+// const stopInterval = document.querySelector("#stop-button");
+// stopInterval.onclick = () => {
+//   clearInterval(intervalRender);
+// };

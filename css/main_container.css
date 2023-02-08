@@ -7,6 +7,9 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  border-width: 0 1px;
+  border-color: black;
+  border-style: solid;
 }
 
 /* 랜덤생성단어박스 */

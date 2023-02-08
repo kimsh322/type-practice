@@ -8,7 +8,11 @@
   padding: 5px 0px;
   position: relative;
   background-color: #b9f3fc;
+  border-width: 1px 1px 0;
+  border-color: black;
+  border-style: solid;
 }
+/* 스코어박스 */
 #score-box {
   display: flex;
   align-items: center;
@@ -20,7 +24,7 @@
   position: absolute;
   left: 0px;
   background-color: #fedeff;
-  border: 2px solid black;
+  border: 0.5px solid black;
   border-radius: 3px;
 }
 #score-box > span {
@@ -32,12 +36,14 @@
   animation-name: headertext;
   animation-duration: 2s;
   z-index: 1;
+  opacity: 1;
 }
+
+/* 중지버튼 */
 #button-box {
   position: absolute;
   right: 0px;
 }
-
 #stop-button {
   width: 80px;
   height: 40px;
@@ -45,15 +51,14 @@
   background-color: #fedeff;
   border: 5px outset #808080;
 }
-
 #stop-button:hover {
   background-color: #8d1d91;
 }
-
 #stop-button:active {
   border: 5px inset #808080;
 }
 
+/* 애니메이션 */
 @keyframes headertext {
   from {
     top: 100%;

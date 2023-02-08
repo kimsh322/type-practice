@@ -6,6 +6,9 @@
   justify-content: space-between;
   align-items: center;
   background: #93c6e7;
+  border-width: 0 1px 1px;
+  border-color: black;
+  border-style: solid;
 }
 #input-box {
   width: 180px;
@@ -26,6 +29,7 @@
   z-index: 1;
 }
 
+/* 단어 개수 카운터 */
 #verb-num-descriptor {
   position: absolute;
   left: 20%;
