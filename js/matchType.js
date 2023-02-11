@@ -23,11 +23,34 @@ function removeStr(str) {
     // 단어 하나당 길이비례점수
     score += str.length * oneLetterScore;
     scoreBox.textContent = score;
+
+    // 점수에 따라 단어생성 시간이 빨라지는 기능
+    const executed = [true, true, true, true];
+    if (score > 200 && executed[0]) {
+      clearInterval(intervalRender);
+      intervalRender = setInterval(randomStrRender, 1600, strArr);
+      executed[0] = false;
+    }
+    if (score > 500 && executed[1]) {
+      clearInterval(intervalRender);
+      intervalRender = setInterval(randomStrRender, 1200, strArr);
+      executed[1] = false;
+    }
+    if (score > 1000 && executed[2]) {
+      clearInterval(intervalRender);
+      intervalRender = setInterval(randomStrRender, 800, strArr);
+      executed[2] = false;
+    }
+    if (score > 1500 && executed[3]) {
+      clearInterval(intervalRender);
+      intervalRender = setInterval(randomStrRender, 400, strArr);
+      executed[3] = false;
+    }
   }
   // 단어 카운터 구현
   const verbNum = document.querySelector("#verb-num");
   verbNum.textContent = existingStr.length;
-  if (existingStr.length > 11) verbNum.classList.add("red");
+  if (existingStr.length > 7) verbNum.classList.add("red");
   else verbNum.classList.remove("red");
 }
 
