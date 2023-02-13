@@ -3,6 +3,7 @@
 // 총점수, 단어 한글자당 점수
 let score = 0;
 let oneLetterScore = 10;
+const executed = [true, true, true, true]; // 속도 빨라질때 interval이 한 번만 바뀌도록하는 boolean 배열
 
 // 인자로 받은 글자가 화면에 있으면 글자를 지우는 함수
 function removeStr(str) {
@@ -25,7 +26,6 @@ function removeStr(str) {
     scoreBox.textContent = score;
 
     // 점수에 따라 단어생성 시간이 빨라지는 기능
-    const executed = [true, true, true, true];
     if (score > 200 && executed[0]) {
       clearInterval(intervalRender);
       intervalRender = setInterval(randomStrRender, 1600, strArr);
