@@ -44,5 +44,7 @@ let randomStrRender = (arr) => {
       el.remove(); // 화면에 단어 모두 제거
     }
     setCounter("Game Over");
+    // 로컬 스토리지에 기록 저장
+    localStorage.setItem(Date.now(), JSON.stringify({ username, score }));
   }
 };
