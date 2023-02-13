@@ -3,8 +3,8 @@ function randomRender(str) {
   const mainContainer = document.querySelector("#main-container");
   const mainContainerRect = mainContainer.getBoundingClientRect();
   const newDiv = document.createElement("div");
-  const strLeng = 80; // 문자열 길이
-  const strHeight = 20; // 문자열 높이
+  const strLeng = 130; // 문자열 길이
+  const strHeight = 25; // 문자열 높이
   let x, y;
   do {
     // 랜덤 위치 지정
