@@ -38,12 +38,12 @@ function removeStr(str) {
     }
     if (score > 1000 && executed[2]) {
       clearInterval(intervalRender);
-      intervalRender = setInterval(randomStrRender, 800, strArr);
+      intervalRender = setInterval(randomStrRender, 1000, strArr);
       executed[2] = false;
     }
     if (score > 1500 && executed[3]) {
       clearInterval(intervalRender);
-      intervalRender = setInterval(randomStrRender, 400, strArr);
+      intervalRender = setInterval(randomStrRender, 800, strArr);
       executed[3] = false;
     }
   }
