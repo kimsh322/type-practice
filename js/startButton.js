@@ -8,7 +8,7 @@ const setCounter = (counter) => {
   newDiv.textContent = counter;
   setTimeout(() => {
     newDiv.classList.add("act"); // 카운터 효과를 주기위한 class 동적 추가(transition발동을 위해서)
-  }, 11);
+  }, 50);
   return mainContainer.appendChild(newDiv);
 };
 // setTimeOut으로 카운터 구현
