@@ -1,3 +1,5 @@
+# 준비중입니다...
+
 # 타자 연습 게임
 
 간단한 타자 연습 게임 입니다.
@@ -45,4 +47,4 @@ setTimeout 함수에 delay 0을 주고 사용하여 약간의 term을 두고 클
 ### startButton.js
 
 transition 적용 됐다가 안됐다가 하는 현상
-setTimeout 시간이 와라가리해서 그런듯. 그래서 11ms 를 줬다.
+setTimeout 시간이 그때그때 달라서 그런듯하다. 그래서 50ms 를 줬다.
