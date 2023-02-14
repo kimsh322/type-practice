@@ -54,6 +54,8 @@ let randomStrRender = (arr) => {
     renewButton.addEventListener("click", () => {
       location.reload();
     });
-    mainContainer.appendChild(renewButton);
+    setTimeout(() => {
+      mainContainer.appendChild(renewButton);
+    }, 1200);
   }
 };
