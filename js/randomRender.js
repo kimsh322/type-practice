@@ -46,5 +46,14 @@ let randomStrRender = (arr) => {
     setCounter("Game Over");
     // 로컬 스토리지에 기록 저장
     localStorage.setItem(Date.now(), JSON.stringify({ username, score }));
+    // 다시하기 버튼구현
+    const mainContainer = document.querySelector("#main-container");
+    const renewButton = document.createElement("button");
+    renewButton.setAttribute("id", "renew-button");
+    renewButton.textContent = "다시하기";
+    renewButton.addEventListener("click", () => {
+      location.reload();
+    });
+    mainContainer.appendChild(renewButton);
   }
 };
