@@ -27,7 +27,9 @@ const counter = (text, num, boolean = true) => {
 const startButton = document.querySelector("#start-button");
 let intervalRender;
 startButton.onclick = () => {
-  startButton.style.display = "none"; //누르면 사라짐
+  setTimeout(() => {
+    startButton.style.display = "none"; //누르면 사라짐
+  }, 500);
   setCounter(3);
   counter(2, 1000);
   counter(1, 2000);
@@ -37,9 +39,3 @@ startButton.onclick = () => {
     intervalRender = setInterval(randomStrRender, 2000, strArr);
   }, 4000);
 };
-
-// 인터발 중지
-// const stopInterval = document.querySelector("#stop-button");
-// stopInterval.onclick = () => {
-//   clearInterval(intervalRender);
-// };
