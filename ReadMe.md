@@ -23,51 +23,61 @@ Game Over시 점수에 따라 랭킹에 등록됩니다.
 <img src="./public/entrance_page.gif" width="450px" height="300px"  alt="entrance_page"></img>
 
 <br/>
-웹페이지를 열면 입장 페이지가 있습니다. 
-username을 입력하고 엔터를 누르면 메인페이지의 display가 flex가 되고, 
+웹페이지를 열면 입장 페이지가 있습니다.<br/>
+username을 입력하고 엔터를 누르면 메인페이지의 display가 flex가 되고,<br/>
 입장페이지의 display가 none이 되면서 페이지가 이동하는 것처럼 만들어 보았습니다.
+
+<br/>
 
 ## 화면 설명
 
 <img src="./public/score.png" width="300px"  alt="score"></img>
-<br/>
+
 메인 화면 왼쪽위에 점수가 나타납니다. 단어를 맞추면 점수가 올라갑니다.
 
-<img src="./public/ranking_rule.gif" width="450px" height='300px'  alt="ranking_rule"></img>
 <br/>
-왼쪽 아래 랭킹보기 버튼에 mouseover시 화면 중앙에 랭킹이 보입니다.
-오른쪽 아래 규칙 보기 버튼에 mouseover시 화면 중앙에 게임 규칙이 보입니다.
+
+<img src="./public/ranking_rule.gif" width="450px" height='300px'  alt="ranking_rule"></img>
+
+<br/>
+
+왼쪽 아래 랭킹보기 버튼에 mouseover시 화면 중앙에 랭킹이 보입니다.<br/>
+오른쪽 아래 규칙 보기 버튼에 mouseover시 화면 중앙에 게임 규칙이 보입니다.<br/>
 랭킹보기, 규칙 보기는 css display 속성으로 구현했습니다.
 
 <img src="./public/start.gif" width="450px" height='300px'  alt="start"></img>
+
 <br/>
-시작 버튼을 누르면 3,2,1,start 카운트 후 게임이 시작됩니다.
+
+시작 버튼을 누르면 3,2,1,start 카운트 후 게임이 시작됩니다.<br/>
 카운터는 setTimeout으로 구현하였습니다.
+
 <br/>
 
 ## 랜덤 단어 생성, 입력시 단어 제거
 
 <img src="./public/match_type.gif" width="450px" height="300px"  alt="match_type"></img>
+
 <br/>
-5500개 단어 배열에서 랜덤한 단어를 받아서 div박스에 담아 메인 화면에 출력합니다.
-setInterval을 사용하여 일정 시간 간격으로 화면에 단어를 생성합니다.
+
+5500개 단어 배열에서 랜덤한 단어를 받아서 div박스에 담아 메인 화면에 출력합니다.<br/>
+setInterval을 사용하여 일정 시간 간격으로 화면에 단어를 생성합니다.<br/>
 점수가 높아지면 interval 간격이 줄어듭니다.
 
-document.getBoundingClientRect 메서드의 width, height 프로퍼티와 Math.ramdom 함수로 랜덤한 위치를 만들고
-메인화면에 position absolute로 top, left 속성을 주고 생성합니다.
+document.getBoundingClientRect 메서드의 width, height 프로퍼티와 Math.ramdom 함수로 랜덤한 위치를 만들고<br/>
+메인화면에 position absolute로 top, left 속성을 주고 생성합니다.<br/>
 do ~ while문으로 화면을 벗어나는 div박스가 없도록 처리했습니다.
 
-단어 입력시 현재 화면에 존재하는 div박스의 textcontent를 받아 배열로 만들어 검사하여 일치하는 단어가 있는 경우
-해당 div박스를 제거하도록 코드를 작성했습니다.
+단어 입력시 현재 화면에 존재하는 div박스의 textcontent를 받아 배열로 만들어 검사하여<br/> 일치하는 단어가 있는 경우 해당 div박스를 제거하도록 코드를 작성했습니다.
 
 <br/>
 
 ## Game Over
 
-<img src="./Gameover.gif" width="450px" height="300px"  alt="Gameover"></img>
+<img src="./public/Gameover.gif" width="450px" height="300px"  alt="Gameover"></img>
 <br/>
-화면 내 단어 숫자가 input창 옆에 나타납니다. 8개 이상이 되면 빨간색으로 주의를 주고,
-단어가 10개가 되면 화면에 있는 단어가 담긴 div 박스를 지우고 Game over text를 띄웁니다.
+화면 내 단어 숫자가 input창 옆에 나타납니다. 8개 이상이 되면 빨간색으로 주의를 주고,<br/>
+단어가 10개가 되면 화면에 있는 단어가 담긴 div 박스를 지우고 Game over text를 띄웁니다.<br/>
 약간의 시간 뒤에 다시하기 버튼이 생성됩니다. 다시하기 버튼을 누르면 새로고침 되면서 입장페이지로 이동합니다.
 
 Game over시 유저이름과 점수가 로컬스토리지에 저장되고 다시 렌더링될 때 랭킹에 추가됩니다.
