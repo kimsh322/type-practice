@@ -1,6 +1,6 @@
 # 타자 연습 게임
 
-Page : <https://kimsh322.github.io/typing-practice/>
+<a href="https://kimsh322.github.io/typing-practice" target="_blank"> 배포 Page 이동 </a>
 
 vanilla javascript를 이용한 간단한 타자 연습 게임 입니다.
 
