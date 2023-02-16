@@ -1,5 +1,7 @@
 # 타자 연습 게임
 
+Page : <https://kimsh322.github.io/typing-practice/>
+
 vanilla javascript를 이용한 간단한 타자 연습 게임 입니다.
 
 일정 시간 간격으로 랜덤한 위치에 랜덤한 단어가 생성됩니다.
